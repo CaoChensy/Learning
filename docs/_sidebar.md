@@ -5,8 +5,9 @@
 	- [内置模块](./Python/py_model.md)
 	- [第三方模块](./Python/packages.md)
 
-- Git命令
+- 开源社区
     - [简单Git命令](./OpenSource/git.md)
+    - [PyPi](./OpenSource/pypi.md)
 
 - R 语言
 	- [R语言](./R/R.md)

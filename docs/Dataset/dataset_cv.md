@@ -28,6 +28,8 @@ data.mnist.model()
 
 ### Fashion-Mnist 数据集
 
+> 🔨 建设中
+
 > 简介
 
 > 导入方式
@@ -50,3 +52,12 @@ data.show()
 ```python
 data.mnist.model()
 ```
+
+### Cifar 
+
+> 🔨 建设中
+
+#### Cifar-10
+
+#### Cifar-100
+
