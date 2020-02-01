@@ -6,7 +6,7 @@
 	- [第三方模块](./Python/packages.md)
 
 - Git命令
-    - [简单Git命令](./Git/git.md)
+    - [简单Git命令](./OpenSource/git.md)
 
 - R 语言
 	- [R语言](./R/R.md)

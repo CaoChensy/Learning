@@ -5,6 +5,9 @@
 ```bash
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+> 官方镜像 https://pypi.python.org/pypi
+
+> 微软 Windows pkg [windows package site](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 
 ### ast 模块
 

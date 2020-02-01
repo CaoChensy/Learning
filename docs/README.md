@@ -8,6 +8,10 @@
     3. emm……
     4. 流水账……其实这玩意也能写日记。
 
+- 站点
+    - [GitHub](https://caochensy.github.io/Learning/#/)，比较慢
+    - [Gitee](http://chensy_cao.gitee.io/learning/#/)，比较快
+
 > 记录者
 
 - Chensy
