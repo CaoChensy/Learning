@@ -88,6 +88,12 @@ git status命
 git diff
 # 版本回滚 
 git reset --hard commit_id
+# 添加远程 push
+git remote set-url --add origin https://gitee.com/chensy_cao/Learning.git
+# 删除远程
+git remote rm gitee
+# 添加远程
+gie remote add <gitee> <url>
 ```
 
 > branch 分支
