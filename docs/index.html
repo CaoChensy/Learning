@@ -7,6 +7,11 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+
+  <link href="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.js"></script>
+
+
 </head>
 <body>
   <div id="app">加载中……</div>
@@ -19,7 +24,24 @@
         autoHeader: true,
         subMaxLevel: 3,
         auto2top: true,
+
+        markdown: {
+        renderer: {
+          code: function (code, lang) {
+            if (lang === "latex") {
+                return (
+                '<span class="latex">'+ katex.renderToString(code, {
+                    throwOnError: false
+                })+'</span>'
+                );
+            }
+            return this.origin.code.apply(this, arguments);
+          }
+        }
+      }
+
     }
+
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
@@ -28,9 +50,8 @@
   <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-latex.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
+
   <script src="//unpkg.com/docsify-copy-code"></script>
-
-
 
 </body>
 </html>

@@ -27,7 +27,7 @@ print(classification_report(y_test, y_pred))
 
 
 ```latex
-$E=mc^2$
+E=mc^2
 ```
 
 
