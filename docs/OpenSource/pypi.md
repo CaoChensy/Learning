@@ -1,6 +1,6 @@
 # Pypi
 
-> [Pypi](https://pypi.org/)
+> [Pypi 官网](https://pypi.org/)
 
 > requirement
 
@@ -97,6 +97,8 @@ pip install <your pkg> -i https://pypi.python.org/pypi
 - 上传之后需要等一段时间，才能下载最新版本的包
 - 更改包的时候一定要修改版本号
 - pip 按照版本号安装，==前后没有空格
+
+---
 
 > 📚 reference
 

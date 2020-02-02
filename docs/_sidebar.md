@@ -8,6 +8,7 @@
 - 开源社区
     - [简单Git命令](./OpenSource/git.md)
     - [PyPi](./OpenSource/pypi.md)
+    - [docsify](./OpenSource/docsify.md)
 
 - R 语言
 	- [R语言](./R/R.md)
@@ -30,8 +31,9 @@
     - [数据集-其他](./Dataset/dataset_other.md)
 
 - IDE
-    - [PyCharm](IDE/charm.md)
-    - [Jupyter Notebook](IDE/jupyter_notebook.md)
+    - [PyCharm](./IDE/charm.md)
+    - [Jupyter Notebook](./IDE/jupyter_notebook.md)
+    - [Typora](./IDE/typora.md)
     
 - 问答区
     - [Q&A](./QA/qa.md)

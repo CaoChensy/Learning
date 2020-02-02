@@ -193,4 +193,6 @@ Temporary Items
 docs/.DS_Store
 docs/Python/.DS_Store
 
-.idea
+.idea/
+dataset/
+res/
