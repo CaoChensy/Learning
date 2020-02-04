@@ -1,4 +1,8 @@
 - [首页]()
+
+- 疫情n-cov
+    - [n-cov](./n_cov/n_cov.md)
+
 - Python基本操作
 	- [Python 基础](./Python/Python.md)
 	- [并行计算](./Python/multiprocessing.md)
