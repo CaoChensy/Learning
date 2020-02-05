@@ -5,6 +5,8 @@
 
 - Python基本操作
 	- [Python 基础](./Python/Python.md)
+	- [Python 3.8](./Python/python3_8.md)
+	- [itertools](./Python/itertools.md)
 	- [并行计算](./Python/multiprocessing.md)
 	- [内置模块](./Python/py_model.md)
 	- [第三方模块](./Python/packages.md)
