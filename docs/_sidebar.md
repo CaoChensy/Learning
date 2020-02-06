@@ -2,6 +2,7 @@
 
 - 疫情n-cov
     - [n-cov](./n_cov/n_cov.md)
+    - [数据可视化Video](./n_cov/video.md)
 
 - Python基本操作
 	- [Python 基础](./Python/Python.md)

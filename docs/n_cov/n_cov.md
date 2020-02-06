@@ -25,7 +25,13 @@
 
 ---
 
-> Author: Marry | Ava | Chensy
+> Author: Marry | Ava | Bob | Chensy
+
+> Thanks: [海豚大数据](http://www.dolphin-labs.com/)
+
+- Coding: [GitHub](https://github.com/HanMENG15990045033/Epidemic_2020)
+- Video: [B站未过审￣□￣｜｜]()
+
 - 🤝 欢迎大家以各种方式提供疫情数据、协作开发、研究文献
     - 疫情数据 📊📈
     - 研究文献 📚📖
@@ -39,3 +45,5 @@
 > 希望大家减少出行✈️，勤洗手🙌，共度国难，中国🇨🇳加油，武汉加油💪。
 
 > 故事要从一只 🦇 讲起……
+
+---
