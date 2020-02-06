@@ -2,6 +2,8 @@
 
 > 本项目持续关注武汉新型冠状病毒的传播。
 
+<p><iframe src="./html/echartsMap.html"  width="1000" height="600"></iframe></p>
+
 ### 全国疫情散点图
 
 <p><iframe src="./html/ncov_Map_scatter.html"  width="1000" height="600"></iframe></p>
@@ -36,4 +38,4 @@
 
 > 希望大家减少出行✈️，勤洗手🙌，共度国难，中国🇨🇳加油，武汉加油💪。
 
-> 故事要从一只 🦇 起……
+> 故事要从一只 🦇 讲起……
