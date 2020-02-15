@@ -11,7 +11,8 @@
 	- [并行计算](./Python/multiprocessing.md)
 	- [内置模块](./Python/py_model.md)
 	- [第三方模块](./Python/packages.md)
-
+- 时间序列分析
+    - [时间序列分析](./TimeSerise/time_serise.md)
 - 开源社区
     - [简单Git命令](./OpenSource/git.md)
     - [PyPi](./OpenSource/pypi.md)

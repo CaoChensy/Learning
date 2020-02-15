@@ -63,6 +63,24 @@ print(callable(C))
 c = C()
 print(callable(c), c())
 ```
+### 装饰器
+
+```python
+import time
+
+def CalTime(fun):
+    def In(x, y):
+        start = time.clock()
+        fun(x, y)
+        end = time.clock()
+        print(f'函数运行时间：{str(end - start)}')
+    return In
+
+@CalTime
+def add(x, y):
+    print(x + y)
+add(1, 2)
+```
 
 ### 类装饰器
 ```python
