@@ -17,11 +17,9 @@
 - Chensy
   
     - Email: chensy.cao@foxmail.com
-- 神仔
-    - Email: 
-    - WeChat: 
+    - WeChat:
     
-<img src='./img/shenzai.jpg' width="150px" height="">
+<img src='./img/chensy_wechat.jpg' width="150px" height="">
 
 ---
 

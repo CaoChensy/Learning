@@ -49,3 +49,15 @@ E=mc^2
 ```
 
 > 如需其他语言请联系开发者进行增加
+
+---
+
+## 协作者
+
+- 神仔
+    - Email: 
+    - WeChat: 
+    
+<img src='./img/shenzai.jpg' width="150px" height="">
+
+- Ava
