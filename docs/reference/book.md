@@ -12,3 +12,6 @@
 - 《战争与工业》
 - 《去依附》
 
+> PDF & Web
+
+- [可解释机器学习](https://github.com/apachecn/interpretable-ml-book-zh)

@@ -483,6 +483,44 @@ x_t - \mu & = \varphi_1(x_{t-1} - \mu) + ... + \varphi_p(x_{t-p} - \mu) + \varep
 $$
 变换$y_t = x_t -\mu$成为中心化变换。
 
+**平稳性判定**
+
+- 时序图和自相关图方法
+- 平稳域判别法和单位根判别法
+- AR 模型平稳性的条件
+    - 特征根判别
+        1. $AR(p)$模型平稳的充要条件是它的$p$个特征根都在单位圆内，特征根$|\lambda_1 < 1|$
+        2. 根据特征根和自回归系数多项式的根成倒数的性质，等价判别条件是该模型的自回归系数多项式
+        的单位根都在单位圆外，$\Phi(\mu) = 0$ 的根$|\mu_i|>1$
+    - 平稳域判别
+        - 平稳域的定义: 使特征根都在单位圆内的$AR(p)$的系数集合，即$\\{\varphi_1, \varphi_2, ..., \varphi_p|特征根都在单位圆内\\}$
+        - 比较适合低阶AR模型，如1，2阶，高阶模型不容易推到平稳域
+    - 经验判断准则
+        - $AR(p)$ 模型平稳性的必要条件是: $\varphi_{1} + \varphi_{2} + ... + \varphi_{p} < 1$
+        - $AR(p)$ 模型平稳性的充分条件是: $|\varphi_{1}| + |\varphi_{2}| + ... + |\varphi_{p}| < 1$
+
+**统计性质**
+
+- 均值
+
+$$E(x_t) = E(\varphi_{0} + \varphi_{1}x_{t-1} + ... + \varphi_{p}x_{1-p} + \varepsilon_t)$$
+因平稳序列均值为常数，且$\\{ \varepsilon_t \\}$为白噪声序列，有$E(x_t) = \mu, E(\varepsilon_t) = 0, \forall t \in T$
+则:
+
+$$
+\begin{aligned}
+E(x_t) & = E(\varphi_{0} + \varphi_{1}x_{t-1} + ... + \varphi_{p}x_{1-p} + \varepsilon_t) \\\\
+& = E(\varphi_{0}) + \varphi_{1}E(x_{t-1}) + ... + \varphi_{p}E(x_{1-p}) + E(\varepsilon_t) \\\\
+& = \varphi_{0} + \varphi_{1}\mu + ... + \varphi_{p}\mu \\\\
+\mu & = \varphi_{0} + \varphi_{1}\mu + ... + \varphi_{p}\mu \\\\
+& = \frac{\varphi_0}{1 - \varphi_1 - ... - \varphi_p}
+\end{aligned}
+$$
+
+- 方差
+
+
+
 > MA 模型: $MA(q)$, $q$阶移动平均模型
 
 $$
@@ -496,15 +534,83 @@ $$
 当$\mu = 0$时，中心化$MA(q)$模型。简$x_t = \Theta(B)\varepsilon_t$。
 $q$阶移动平均系数多项式: $\Theta(B) = 1 - \theta_1 B - \theta_2 B^2 - ... - \theta_q B^q $。
 
+**平稳性判定**
+
+方差存在且有界的$MA$模型生成的序列总是平稳的，所以对应的$MA$模型也总是平稳的。
+
+**统计性质**
+
+
 > ARMA 模型: $ARMA(p, q)$
 
 $$
 \begin{cases}
-x_t = \mu + \varepsilon_t + \theta_{1} \varepsilon_{t-1} + \theta_{2} \varepsilon_{t-2} + ... + \theta_{q} \varepsilon_{t-q} \\\\
-\theta_q \ne 0 \\\\
-E(\varepsilon_t) = 0, Var(\varepsilon_t) = \sigma_{\varepsilon}^2, E(\varepsilon_t \varepsilon_s) = 0, s \ne t.
+x_t = \phi_0 + \phi_1 x_{t-1} + ... + \phi_p x_{1-p} + \varepsilon_t - \theta_1 \varepsilon_{t-1} - ... - \theta_q \varepsilon_{t-q}\\\\
+\phi_p \ne 0, \theta_q \ne 0 \\\\
+E(\varepsilon_t) = 0, Var(\varepsilon_t) = \sigma_{\varepsilon}^2, E(\varepsilon_t \varepsilon_s) = 0, s \ne t \\\\
+E(x_s, \varepsilon_{t}) = 0, \forall s < t.
 \end{cases}
 $$
+
+$\phi_0 = 0$ 时，为中心化$ARMA(p, q)$模型，简记为: $\Phi (B) x_t = \Theta (b) \varepsilon_t$
+- $p$阶自回归系数多项式: $\Phi (B) = 1 - \phi_1B - \phi_2B^2 - ... - \phi_pB^p$
+- $q$阶自回归系数多项式: $\Theta (B) = 1 - \theta_1 B - \theta_2 B^2 - ... - \theta_q B^q$
+
+**平稳性判定**
+
+$p$阶自回归系数多项式$\Phi(B) = 0$的根都在单位圆外，
+即$ARMA(p,q)$模型的平稳性完全由其自回归部分的平稳性决定。
+
+给定原始模型$\Phi(B)X_t = \Theta(B)\varepsilon_t$, 令$z_t = \Theta(B)\varepsilon_t$，
+因为$z_t$是关于平稳序列$\varepsilon_t$的线性组合，很容易验证$z_t$是平稳的零均值白噪声序列。
+所以$\Theta(B) x_t= z_t$可以看做是一个$AR$模型。
+
+**统计性质**
+
+
+
+> 平稳时间序列的建模过程 - p(17)
+
+```mermaid
+graph LR
+    建模步骤-->模型识别;
+    模型识别-->参数估计;
+    参数估计-->模型检验;
+    模型检验-->模型优化;
+    模型优化-->序列预测;
+```
+
+**平稳时间序列建模步骤**
+
+1. 平稳非白噪声序列: 观察值序列通过平稳性检验与纯随机性检验
+    - 自相关图`SACF`
+    - 偏自相关图`SPACF`
+    - 将原序列转变为平稳的`0`均值序列，建立`中心化的ARMA`模型。
+    - 方差非平稳: 对数变换，平方根变换等: 经济时间序列先对数据取对数，消除异方差，再进行分析相关图。
+    - 均值非平稳: 差分变换，可以通过相关图进行粗略判断。
+        - 差分运算至获得平稳序列，一般差分`0-2`。
+        - 非零均值的平稳序列两种处理方法:
+            - 设$x_t$为一非零均值的平稳序列，且有$E(x_t) = \mu$
+            - 方法1: 用样本均值$\overline{x}$作为序列均值$\mu$的估计，建模前先对序列做如下处理，
+            $w_t = x_t - \overline{x}$然后对零均值平稳序列$w_t$建模。
+            - 方法2: 在模型识别阶段对序列均值是否为0不予考虑，而在参数估计阶段，
+            将序列均值作为一个参数加以估计。
+2. 计算样本自(偏)自相关系数。
+3. 模型识别|模型定阶: $ARMA(p, q)$模型。
+    - 根据自相关图`SACF`，偏自相关图`SPACF`表现出的性质，选择适当的`ARMA`模型拟合观测值序列。
+
+    |自相关系数$\rho_k$|偏自相关系数$\hat{\varphi}_{kk}$|选择模型|
+    |-----------------|------------------------------|-------|
+    |拖尾              |$p$ 阶截尾                     |$AR(p)$|
+    |$q$ 阶截尾        |拖尾                           |$MA(q)$|
+    |拖尾              |拖尾                           |$ARMA(p, q)$|
+    
+    
+
+4. 参数估计
+5. 模型检验
+6. 模型的优化
+7. 模型预测
 
 
 ---

@@ -11,8 +11,15 @@
 	- [并行计算](./Python/multiprocessing.md)
 	- [内置模块](./Python/py_model.md)
 	- [第三方模块](./Python/packages.md)
+
+- 金融风控
+    - [概述](./credit/overview.md)
+    - [数据挖掘](./credit/data_mining.md)
+
 - 时间序列分析
     - [时间序列分析](./TimeSerise/time_serise.md)
+    - [Pandas时间操作](./TimeSerise/pandas.md)
+    
 - 开源社区
     - [简单Git命令](./OpenSource/git.md)
     - [PyPi](./OpenSource/pypi.md)
@@ -27,6 +34,7 @@
 
 - 机器学习
 	- [机器学习](./MachineLearning/MachineLearning.md)
+	- [Scikit-learn](./MachineLearning/Scikit_learn.md)
 
 - 深度学习
     - [Keras](./DeepLearning/keras.md)
@@ -42,6 +50,10 @@
     - [PyCharm](./IDE/charm.md)
     - [Jupyter Notebook](./IDE/jupyter_notebook.md)
     - [Typora](./IDE/typora.md)
+    
+- 其他资料
+    - [风控面试](./risk_control/Risk_Control_Interview.md)
+    - [银行培训](./bank/train.md)
     
 - 问答区
     - [Q&A](./QA/qa.md)
