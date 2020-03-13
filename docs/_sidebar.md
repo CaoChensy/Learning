@@ -15,6 +15,7 @@
 - 金融风控
     - [概述](./credit/overview.md)
     - [数据挖掘](./credit/data_mining.md)
+    - [评分卡](./credit/credit_card.md)
 
 - 时间序列分析
     - [时间序列分析](./TimeSerise/time_serise.md)
@@ -38,6 +39,7 @@
 
 - 深度学习
     - [Keras](./DeepLearning/keras.md)
+    - [NLP](./DeepLearning/NLP.md)
 
 - 数据集
     - [数据原油](./Dataset/dataset.md)

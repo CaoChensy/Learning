@@ -15,3 +15,4 @@
 > PDF & Web
 
 - [可解释机器学习](https://github.com/apachecn/interpretable-ml-book-zh)
+- [Awesome Python](http://jobbole.github.io/awesome-python-cn/#_54)
