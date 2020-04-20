@@ -55,7 +55,6 @@
     
 - 其他资料
     - [风控面试](./risk_control/Risk_Control_Interview.md)
-    - [银行培训](./bank/train.md)
     
 - 问答区
     - [Q&A](./QA/qa.md)
