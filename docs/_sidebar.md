@@ -11,6 +11,7 @@
 	- [并行计算](./Python/multiprocessing.md)
 	- [内置模块](./Python/py_model.md)
 	- [第三方模块](./Python/packages.md)
+	- [PySpark](./Python/pyspark.md)
 
 - 金融风控
     - [概述](./credit/overview.md)
